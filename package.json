@@ -2,7 +2,7 @@
   "name": "mpvue-banner",
   "version": "1.0.1",
   "description": "a banner based on the mini programe'banner component",
-  "author": "李金芮 <jinrui.li@mishi.cn>",
+  "author": "飘逸丶麦子 <1024689225@qq.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
