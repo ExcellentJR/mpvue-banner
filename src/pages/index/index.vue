@@ -13,6 +13,7 @@
       @change="swiperChange" >
       <swiper-item v-for="(bannerItem, bannerIndex) in bannerList" :key="bannerIndex">
         <!-- 效果实现关键点，在于class名为image-container的元素的style中justify-content与padding的值，该值在currentIndex为0和最后一张图的时候，与其他位置的值不太一样，需要自行设定 -->
+        <!-- padding值需要自己根据设计稿计算 -->
         <div class="image-container"
           :style="{
             justifyContent: currentIndex===0?((bannerIndex===bannerList.length-1)?'flex-end':(bannerIndex===1?'flex-start':'center')):(currentIndex===bannerList.length-1?(bannerIndex===0?'flex-start':(bannerIndex===bannerList.length-2?'flex-end':'center')):(bannerIndex===currentIndex-1?'flex-end':(bannerIndex===currentIndex+1?'flex-start':'center'))), 
